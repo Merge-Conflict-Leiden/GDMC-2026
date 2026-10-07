@@ -5,6 +5,7 @@ This module contains the main entry point of the generator.
 import argparse
 import logging
 
+from dotenv import dotenv_values
 from gdpc.editor import Editor
 from glm import ivec2
 
@@ -28,7 +29,7 @@ from terrain.terrain_modifier import TerrainModifier
 from terrain.terrain_segmenter import TerrainSegmenter
 from terrain.terrain_types import SubZone, ZoneType
 from terrain.wall_placer import WallPlacer
-from utils import rotate_offset, setup_logging
+from utils import announce, rotate_offset, setup_logging
 
 logger = logging.getLogger(__name__)
 
@@ -65,6 +66,7 @@ def main():
         sbp = SchematicBuildingPlacer(editor, terrain, modifier)
 
         # ── Phase A: terrain prep (smooth road heights, clear wall corridor) ──
+        announce("We effenen het terrein voordat we beginnen met bouwen...")
         modifier.fill_terrain_holes()
         if terrain.road_network is not None:
             modifier.prepare_roads(terrain.road_network)
@@ -81,6 +83,7 @@ def main():
         # castle (no buffer) so place_roads skips those cells — the castle is
         # placed BEFORE the road surface, and the roads' air-clearing pass
         # would otherwise carve into any part of it standing on road cells.
+        announce("We proberen het kasteel te bouwen...")
         castle_cells: set[tuple[int, int]] = set()
         castle = sbp.load_file(
             "castle/castle_small.csv", category="castle", footprint_y=1
@@ -144,6 +147,7 @@ def main():
         # ── Phase C: road + wall surface blocks ──
         # Skip the castle bounding box: its doorstep track (laid in Phase B)
         # already bridges the entrance to the road network.
+        announce("We leggen de wegen aan...")
         RoadPlacer(editor, terrain).place_roads(protected=castle_cells)
 
         # The castle doorstep track was laid in Phase B; the wall must not
@@ -151,6 +155,7 @@ def main():
         pre_occ |= sbp.approach_cells
 
         if terrain.wall_layout is not None:
+            announce("We bouwen de stadsmuur rondom het dorp...")
             _wall_count, wall_cells = WallPlacer(editor, terrain, modifier).place_wall(
                 terrain.wall_layout, pre_occupied=pre_occ
             )
@@ -167,6 +172,7 @@ def main():
 
         # ── Phase C2: Market square ──
         # Must run before fill_urban so TOWN_CENTER cells are pre-occupied.
+        announce("We richten het marktplein in...")
         market = sbp.load_dir("market")
         fountains = [b for b in market if b.category == "fountain"]
         stands = [b for b in market if b.category == "stand"]
@@ -196,6 +202,7 @@ def main():
         # ── Phase D: civil buildings (houses, professions, civic) ──
         # fill_urban merges road cells into pre_occ and returns the full
         # occupied set (pre_occ + roads + building footprints).
+        announce("We bouwen de huizen en gebouwen van het dorp...")
         civil = sbp.load_dir("civil")
         full_occ, building_counts = sbp.fill_urban(
             civil, y_offset=1, pre_occupied=pre_occ
@@ -229,6 +236,7 @@ def main():
         # ── Phase E: rural generators ──
         # full_occ prevents farmland / pens / orchards from overwriting anything.
 
+        announce("We richten het platteland in: boerderijen, molens en meer...")
         windmill = sbp.load_file("farmland/windmill1.csv", category="windmill")
         if windmill is not None:
             sbp.place_at_sites(
@@ -283,6 +291,7 @@ def main():
         # Gardens run before misc so they claim contiguous patches first;
         # misc then scatters into whatever cells remain.  Densities are set
         # generously so the town reads as lived-in rather than freshly swept.
+        announce("We voegen de laatste details toe...")
         misc = sbp.load_dir("misc")
         sbp.place_urban_gardens(full_occ, chance=0.30)
         sbp.place_gardens(full_occ, near_building_chance=0.30, standalone_chance=0.12)
@@ -304,29 +313,35 @@ def main():
         # villager_types / utility_buildings were computed in Phase D.  The Lore
         # cast, district names and the graveyard's dead are woven in so the book
         # names the same town, people and dead that appear in the world.
-        chronicle = Chronicles(
-            editor,
-            editor.worldSlice,
-            ivec2(terrain.x0, terrain.z0),
-            terrain.width,
-            terrain.depth,
-            terrain.town_center,
-            villager_types,
-            disaster,
-            has_harbour,
-            utility_buildings,
-            lectern_pos,
-            building_counts=building_counts,
-            castle_entrance=terrain.castle_entrance,
-            settlement_name=lore.settlement_name,
-            residents=lore.resident_labels(),
-            districts=lore.district_labels(),
-            deceased=lore.deceased_labels(),
-            has_maze=has_maze,
-            has_construction=n_construction > 0,
-            has_crypt=has_crypt,
-        )
-        chronicle.place_chronicle()
+        if not dotenv_values().get("OPENAI_API_KEY"):
+            logger.warning(
+                "OPENAI_API_KEY not set in .env; skipping chronicle generation."
+            )
+        else:
+            announce("We schrijven de kroniek van het dorp...")
+            chronicle = Chronicles(
+                editor,
+                editor.worldSlice,
+                ivec2(terrain.x0, terrain.z0),
+                terrain.width,
+                terrain.depth,
+                terrain.town_center,
+                villager_types,
+                disaster,
+                has_harbour,
+                utility_buildings,
+                lectern_pos,
+                building_counts=building_counts,
+                castle_entrance=terrain.castle_entrance,
+                settlement_name=lore.settlement_name,
+                residents=lore.resident_labels(),
+                districts=lore.district_labels(),
+                deceased=lore.deceased_labels(),
+                has_maze=has_maze,
+                has_construction=n_construction > 0,
+                has_crypt=has_crypt,
+            )
+            chronicle.place_chronicle()
 
         # Clean up possible droppings due to overlapping placement, or entity
         # cramming
@@ -337,12 +352,15 @@ def main():
         # placement can suffocate or displace them.  Flush first so every block
         # (including the chronicle lectern) is already placed before they drop in.
         editor.flushBuffer()
+        announce("De inwoners komen het dorp bewonen...")
         PopulationGenerator().generate(editor, terrain, lore)
 
+        announce("Het dorp is klaar! Veel plezier.")
         logger.info("Generation complete.")
 
     except Exception:
         logger.exception("Error during generation.")
+        announce("Er ging iets mis tijdens het genereren van het dorp.")
         raise
     finally:
         editor.flushBuffer()

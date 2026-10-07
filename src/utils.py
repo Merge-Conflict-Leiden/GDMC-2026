@@ -122,3 +122,17 @@ def log(message: str, in_game: bool = False, verbosity: int = logging.INFO):
             logger.info(message)
     if in_game:
         runCommand(f"say {message}")
+
+
+def announce(message: str) -> None:
+    """
+    Send a short, friendly status update to the in-game chat, in Dutch.
+
+    Unlike ``log()``, this is player-facing narration rather than a technical
+    trace: it is always shown in-game (no verbosity gate) and should only be
+    called at major pipeline milestones, not per-item detail.
+
+    :param message: The Dutch chat message to broadcast.
+    """
+    logger.info(message)
+    runCommand(f"say {message}")
