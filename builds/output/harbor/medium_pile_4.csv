@@ -1,0 +1,6 @@
+Position,BlockID,States,Data
+"(0, 0, 0)",minecraft:barrel,"{'facing': 'up', 'open': 'false'}","{components: {}, Items: [], id: ""minecraft:barrel""}"
+"(1, 0, 0)",minecraft:barrel,"{'facing': 'north', 'open': 'false'}","{components: {}, Items: [], id: ""minecraft:barrel""}"
+"(1, 0, 1)",minecraft:barrel,"{'facing': 'north', 'open': 'false'}","{components: {}, Items: [], id: ""minecraft:barrel""}"
+"(2, 0, 2)",minecraft:barrel,"{'facing': 'north', 'open': 'false'}","{components: {}, Items: [], id: ""minecraft:barrel""}"
+"(1, 1, 1)",minecraft:chest,"{'facing': 'east', 'type': 'single', 'waterlogged': 'false'}","{components: {}, Items: [], id: ""minecraft:chest""}"

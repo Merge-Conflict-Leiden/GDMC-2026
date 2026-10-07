@@ -1,0 +1,3 @@
+Position,BlockID,States,Data
+"(0, 0, 0)",minecraft:spruce_fence_gate,"{'facing': 'south', 'in_wall': 'false', 'open': 'true', 'powered': 'false'}",
+"(0, 0, 1)",minecraft:cauldron,{},

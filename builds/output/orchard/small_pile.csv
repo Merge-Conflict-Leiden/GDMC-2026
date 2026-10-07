@@ -1,0 +1,6 @@
+Position,BlockID,States,Data
+"(0, 0, 0)",minecraft:cauldron,{},
+"(0, 0, 1)",minecraft:barrel,"{'facing': 'north', 'open': 'false'}","{components: {}, Items: [], id: ""minecraft:barrel""}"
+"(1, 0, 1)",minecraft:barrel,"{'facing': 'east', 'open': 'false'}","{components: {}, Items: [], id: ""minecraft:barrel""}"
+"(0, 1, 0)",minecraft:tripwire_hook,"{'attached': 'false', 'facing': 'north', 'powered': 'false'}",
+"(0, 1, 1)",minecraft:barrel,"{'facing': 'north', 'open': 'false'}","{components: {}, Items: [], id: ""minecraft:barrel""}"

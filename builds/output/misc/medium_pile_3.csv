@@ -1,0 +1,8 @@
+Position,BlockID,States,Data
+"(0, 0, 0)",minecraft:spruce_stairs,"{'facing': 'west', 'half': 'top', 'shape': 'straight', 'waterlogged': 'false'}",
+"(1, 0, 0)",minecraft:spruce_stairs,"{'facing': 'east', 'half': 'top', 'shape': 'straight', 'waterlogged': 'false'}",
+"(2, 0, 0)",minecraft:chest,"{'facing': 'north', 'type': 'single', 'waterlogged': 'false'}","{components: {}, Items: [], id: ""minecraft:chest""}"
+"(0, 1, 0)",minecraft:spruce_trapdoor,"{'facing': 'east', 'half': 'bottom', 'open': 'true', 'powered': 'false', 'waterlogged': 'false'}",
+"(1, 1, 0)",minecraft:spruce_trapdoor,"{'facing': 'west', 'half': 'bottom', 'open': 'true', 'powered': 'false', 'waterlogged': 'false'}",
+"(0, 2, 0)",minecraft:spruce_trapdoor,"{'facing': 'east', 'half': 'bottom', 'open': 'false', 'powered': 'false', 'waterlogged': 'false'}",
+"(1, 2, 0)",minecraft:spruce_trapdoor,"{'facing': 'west', 'half': 'bottom', 'open': 'false', 'powered': 'false', 'waterlogged': 'false'}",

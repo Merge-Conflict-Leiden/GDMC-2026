@@ -1,0 +1,107 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="Eslint" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="2">
+            <item index="0" class="java.lang.String" itemvalue="sse-connect" />
+            <item index="1" class="java.lang.String" itemvalue="sse-swap" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="PyAugmentAssignmentInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyCompatibilityInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ourVersions">
+        <value>
+          <list size="6">
+            <item index="0" class="java.lang.String" itemvalue="3.14" />
+            <item index="1" class="java.lang.String" itemvalue="3.10" />
+            <item index="2" class="java.lang.String" itemvalue="3.11" />
+            <item index="3" class="java.lang.String" itemvalue="3.12" />
+            <item index="4" class="java.lang.String" itemvalue="3.13" />
+            <item index="5" class="java.lang.String" itemvalue="3.15" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyMissingOrEmptyDocstringInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyMissingTypeHintsInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <list>
+          <option value="aiohttp" />
+          <option value="aiosignal" />
+          <option value="annotated-types" />
+          <option value="anyio" />
+          <option value="async-timeout" />
+          <option value="attrs" />
+          <option value="beautifulsoup4" />
+          <option value="boltons" />
+          <option value="bracex" />
+          <option value="click-option-group" />
+          <option value="colorama" />
+          <option value="defusedxml" />
+          <option value="distro" />
+          <option value="exceptiongroup" />
+          <option value="face" />
+          <option value="frozenlist" />
+          <option value="glom" />
+          <option value="h11" />
+          <option value="httpcore" />
+          <option value="httpx" />
+          <option value="jsonschema" />
+          <option value="jsonschema-specifications" />
+          <option value="markdown-it-py" />
+          <option value="mdurl" />
+          <option value="multidict" />
+          <option value="mysql-connector-python" />
+          <option value="openai" />
+          <option value="packaging" />
+          <option value="peewee" />
+          <option value="pydantic" />
+          <option value="pydantic_core" />
+          <option value="Pygments" />
+          <option value="referencing" />
+          <option value="rich" />
+          <option value="rpds-py" />
+          <option value="ruamel.yaml" />
+          <option value="ruamel.yaml.clib" />
+          <option value="semgrep" />
+          <option value="sniffio" />
+          <option value="soupsieve" />
+          <option value="tomli" />
+          <option value="typing_extensions" />
+          <option value="wcmatch" />
+          <option value="yarl" />
+          <option value="dotenv" />
+          <option value="mysqlclient" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N803" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyStubPackagesCompatibilityInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredStubPackages">
+        <list>
+          <option value="scipy-stubs~=1.17.1" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="scoreboard.models.Board.bracket_size" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

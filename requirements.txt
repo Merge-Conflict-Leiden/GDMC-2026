@@ -1,0 +1,11 @@
+gdpc~=8.1.0
+matplotlib~=3.11.0
+nbtlib~=2.0.4
+numpy~=2.5.0
+openai~=2.44.0
+pandas~=3.0.3
+pyglm~=2.8.3
+python-dotenv~=1.2.2
+scipy~=1.18.0
+scikit-image~=0.26.0
+selenium~=4.45.0
