@@ -1,0 +1,7 @@
+Position,BlockID,States,Data
+"(1, 0, 1)",minecraft:hanging_roots,{'waterlogged': 'false'},
+"(1, 0, 2)",minecraft:spruce_fence_gate,"{'facing': 'north', 'in_wall': 'false', 'open': 'true', 'powered': 'false'}",
+"(1, 1, 0)",minecraft:waxed_exposed_lightning_rod,"{'facing': 'south', 'powered': 'false', 'waterlogged': 'false'}",
+"(0, 1, 1)",minecraft:spruce_trapdoor,"{'facing': 'west', 'half': 'bottom', 'open': 'false', 'powered': 'false', 'waterlogged': 'false'}",
+"(1, 1, 1)",minecraft:calibrated_sculk_sensor,"{'facing': 'south', 'power': '0', 'sculk_sensor_phase': 'inactive', 'waterlogged': 'false'}","{components: {}, last_vibration_frequency: 1, listener: {selector: {tick: -1L}, event_delay: 0}, id: ""minecraft:calibrated_sculk_sensor""}"
+"(2, 1, 1)",minecraft:spruce_trapdoor,"{'facing': 'east', 'half': 'bottom', 'open': 'false', 'powered': 'false', 'waterlogged': 'false'}",

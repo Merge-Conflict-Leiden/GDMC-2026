@@ -1,0 +1,14 @@
+Position,BlockID,States,Data
+"(1, 0, 0)",minecraft:barrel,"{'facing': 'up', 'open': 'false'}","{components: {}, Items: [], id: ""minecraft:barrel""}"
+"(2, 0, 0)",minecraft:barrel,"{'facing': 'east', 'open': 'false'}","{components: {}, Items: [], id: ""minecraft:barrel""}"
+"(3, 0, 0)",minecraft:campfire,"{'facing': 'north', 'lit': 'false', 'signal_fire': 'false', 'waterlogged': 'false'}","{components: {}, Items: [], CookingTimes: [I; 0, 0, 0, 0], CookingTotalTimes: [I; 0, 0, 0, 0], id: ""minecraft:campfire""}"
+"(1, 0, 1)",minecraft:barrel,"{'facing': 'up', 'open': 'false'}","{components: {}, Items: [], id: ""minecraft:barrel""}"
+"(2, 0, 1)",minecraft:barrel,"{'facing': 'up', 'open': 'false'}","{components: {}, Items: [], id: ""minecraft:barrel""}"
+"(3, 0, 1)",minecraft:campfire,"{'facing': 'west', 'lit': 'false', 'signal_fire': 'false', 'waterlogged': 'false'}","{components: {}, Items: [], CookingTimes: [I; 0, 0, 0, 0], CookingTotalTimes: [I; 0, 0, 0, 0], id: ""minecraft:campfire""}"
+"(0, 0, 2)",minecraft:barrel,"{'facing': 'up', 'open': 'false'}","{components: {}, Items: [], id: ""minecraft:barrel""}"
+"(1, 0, 2)",minecraft:barrel,"{'facing': 'up', 'open': 'false'}","{components: {}, Items: [], id: ""minecraft:barrel""}"
+"(2, 0, 2)",minecraft:barrel,"{'facing': 'south', 'open': 'false'}","{components: {}, Items: [], id: ""minecraft:barrel""}"
+"(1, 1, 0)",minecraft:campfire,"{'facing': 'south', 'lit': 'false', 'signal_fire': 'false', 'waterlogged': 'false'}","{components: {}, Items: [], CookingTimes: [I; 0, 0, 0, 0], CookingTotalTimes: [I; 0, 0, 0, 0], id: ""minecraft:campfire""}"
+"(2, 1, 0)",minecraft:lantern,"{'hanging': 'false', 'waterlogged': 'false'}",
+"(1, 1, 1)",minecraft:barrel,"{'facing': 'up', 'open': 'false'}","{components: {}, Items: [], id: ""minecraft:barrel""}"
+"(2, 1, 1)",minecraft:barrel,"{'facing': 'east', 'open': 'false'}","{components: {}, Items: [], id: ""minecraft:barrel""}"

@@ -1,0 +1,11 @@
+[tool.ruff]
+target-version = "py312"
+exclude = ["builds/**", "!builds/schem_to_gdpc.py"]
+
+[tool.ruff.lint]
+select = ["I", "F401"]
+
+[tool.ty.environment]
+extra-paths = [
+    "./src",
+]

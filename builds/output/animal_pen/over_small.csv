@@ -1,0 +1,48 @@
+Position,BlockID,States,Data
+"(0, 0, 0)",minecraft:lodestone,{},
+"(4, 0, 0)",minecraft:lodestone,{},
+"(0, 0, 6)",minecraft:lodestone,{},
+"(4, 0, 6)",minecraft:lodestone,{},
+"(0, 1, 0)",minecraft:spruce_fence,"{'east': 'false', 'north': 'false', 'south': 'false', 'waterlogged': 'false', 'west': 'false'}",
+"(4, 1, 0)",minecraft:spruce_fence,"{'east': 'false', 'north': 'false', 'south': 'false', 'waterlogged': 'false', 'west': 'false'}",
+"(0, 1, 6)",minecraft:spruce_fence,"{'east': 'false', 'north': 'false', 'south': 'false', 'waterlogged': 'false', 'west': 'false'}",
+"(4, 1, 6)",minecraft:spruce_fence,"{'east': 'false', 'north': 'false', 'south': 'false', 'waterlogged': 'false', 'west': 'false'}",
+"(0, 2, 0)",minecraft:spruce_fence,"{'east': 'false', 'north': 'false', 'south': 'false', 'waterlogged': 'false', 'west': 'false'}",
+"(4, 2, 0)",minecraft:spruce_fence,"{'east': 'false', 'north': 'false', 'south': 'false', 'waterlogged': 'false', 'west': 'false'}",
+"(0, 2, 6)",minecraft:spruce_fence,"{'east': 'false', 'north': 'false', 'south': 'false', 'waterlogged': 'false', 'west': 'false'}",
+"(4, 2, 6)",minecraft:spruce_fence,"{'east': 'false', 'north': 'false', 'south': 'false', 'waterlogged': 'false', 'west': 'false'}",
+"(0, 3, 0)",minecraft:campfire,"{'facing': 'east', 'lit': 'false', 'signal_fire': 'false', 'waterlogged': 'false'}","{components: {}, Items: [], CookingTimes: [I; 0, 0, 0, 0], CookingTotalTimes: [I; 0, 0, 0, 0], id: ""minecraft:campfire""}"
+"(1, 3, 0)",minecraft:campfire,"{'facing': 'east', 'lit': 'false', 'signal_fire': 'false', 'waterlogged': 'false'}","{components: {}, Items: [], CookingTimes: [I; 0, 0, 0, 0], CookingTotalTimes: [I; 0, 0, 0, 0], id: ""minecraft:campfire""}"
+"(2, 3, 0)",minecraft:campfire,"{'facing': 'east', 'lit': 'false', 'signal_fire': 'false', 'waterlogged': 'false'}","{components: {}, Items: [], CookingTimes: [I; 0, 0, 0, 0], CookingTotalTimes: [I; 0, 0, 0, 0], id: ""minecraft:campfire""}"
+"(3, 3, 0)",minecraft:campfire,"{'facing': 'east', 'lit': 'false', 'signal_fire': 'false', 'waterlogged': 'false'}","{components: {}, Items: [], CookingTimes: [I; 0, 0, 0, 0], CookingTotalTimes: [I; 0, 0, 0, 0], id: ""minecraft:campfire""}"
+"(4, 3, 0)",minecraft:campfire,"{'facing': 'east', 'lit': 'false', 'signal_fire': 'false', 'waterlogged': 'false'}","{components: {}, Items: [], CookingTimes: [I; 0, 0, 0, 0], CookingTotalTimes: [I; 0, 0, 0, 0], id: ""minecraft:campfire""}"
+"(0, 3, 1)",minecraft:campfire,"{'facing': 'east', 'lit': 'false', 'signal_fire': 'false', 'waterlogged': 'false'}","{components: {}, Items: [], CookingTimes: [I; 0, 0, 0, 0], CookingTotalTimes: [I; 0, 0, 0, 0], id: ""minecraft:campfire""}"
+"(1, 3, 1)",minecraft:campfire,"{'facing': 'east', 'lit': 'false', 'signal_fire': 'false', 'waterlogged': 'false'}","{components: {}, Items: [], CookingTimes: [I; 0, 0, 0, 0], CookingTotalTimes: [I; 0, 0, 0, 0], id: ""minecraft:campfire""}"
+"(2, 3, 1)",minecraft:campfire,"{'facing': 'east', 'lit': 'false', 'signal_fire': 'false', 'waterlogged': 'false'}","{components: {}, Items: [], CookingTimes: [I; 0, 0, 0, 0], CookingTotalTimes: [I; 0, 0, 0, 0], id: ""minecraft:campfire""}"
+"(3, 3, 1)",minecraft:campfire,"{'facing': 'east', 'lit': 'false', 'signal_fire': 'false', 'waterlogged': 'false'}","{components: {}, Items: [], CookingTimes: [I; 0, 0, 0, 0], CookingTotalTimes: [I; 0, 0, 0, 0], id: ""minecraft:campfire""}"
+"(4, 3, 1)",minecraft:campfire,"{'facing': 'east', 'lit': 'false', 'signal_fire': 'false', 'waterlogged': 'false'}","{components: {}, Items: [], CookingTimes: [I; 0, 0, 0, 0], CookingTotalTimes: [I; 0, 0, 0, 0], id: ""minecraft:campfire""}"
+"(0, 3, 2)",minecraft:campfire,"{'facing': 'east', 'lit': 'false', 'signal_fire': 'false', 'waterlogged': 'false'}","{components: {}, Items: [], CookingTimes: [I; 0, 0, 0, 0], CookingTotalTimes: [I; 0, 0, 0, 0], id: ""minecraft:campfire""}"
+"(1, 3, 2)",minecraft:campfire,"{'facing': 'east', 'lit': 'false', 'signal_fire': 'false', 'waterlogged': 'false'}","{components: {}, Items: [], CookingTimes: [I; 0, 0, 0, 0], CookingTotalTimes: [I; 0, 0, 0, 0], id: ""minecraft:campfire""}"
+"(2, 3, 2)",minecraft:campfire,"{'facing': 'east', 'lit': 'false', 'signal_fire': 'false', 'waterlogged': 'false'}","{components: {}, Items: [], CookingTimes: [I; 0, 0, 0, 0], CookingTotalTimes: [I; 0, 0, 0, 0], id: ""minecraft:campfire""}"
+"(3, 3, 2)",minecraft:campfire,"{'facing': 'east', 'lit': 'false', 'signal_fire': 'false', 'waterlogged': 'false'}","{components: {}, Items: [], CookingTimes: [I; 0, 0, 0, 0], CookingTotalTimes: [I; 0, 0, 0, 0], id: ""minecraft:campfire""}"
+"(4, 3, 2)",minecraft:campfire,"{'facing': 'east', 'lit': 'false', 'signal_fire': 'false', 'waterlogged': 'false'}","{components: {}, Items: [], CookingTimes: [I; 0, 0, 0, 0], CookingTotalTimes: [I; 0, 0, 0, 0], id: ""minecraft:campfire""}"
+"(0, 3, 3)",minecraft:campfire,"{'facing': 'east', 'lit': 'false', 'signal_fire': 'false', 'waterlogged': 'false'}","{components: {}, Items: [], CookingTimes: [I; 0, 0, 0, 0], CookingTotalTimes: [I; 0, 0, 0, 0], id: ""minecraft:campfire""}"
+"(1, 3, 3)",minecraft:campfire,"{'facing': 'east', 'lit': 'false', 'signal_fire': 'false', 'waterlogged': 'false'}","{components: {}, Items: [], CookingTimes: [I; 0, 0, 0, 0], CookingTotalTimes: [I; 0, 0, 0, 0], id: ""minecraft:campfire""}"
+"(2, 3, 3)",minecraft:campfire,"{'facing': 'east', 'lit': 'false', 'signal_fire': 'false', 'waterlogged': 'false'}","{components: {}, Items: [], CookingTimes: [I; 0, 0, 0, 0], CookingTotalTimes: [I; 0, 0, 0, 0], id: ""minecraft:campfire""}"
+"(3, 3, 3)",minecraft:campfire,"{'facing': 'east', 'lit': 'false', 'signal_fire': 'false', 'waterlogged': 'false'}","{components: {}, Items: [], CookingTimes: [I; 0, 0, 0, 0], CookingTotalTimes: [I; 0, 0, 0, 0], id: ""minecraft:campfire""}"
+"(4, 3, 3)",minecraft:campfire,"{'facing': 'east', 'lit': 'false', 'signal_fire': 'false', 'waterlogged': 'false'}","{components: {}, Items: [], CookingTimes: [I; 0, 0, 0, 0], CookingTotalTimes: [I; 0, 0, 0, 0], id: ""minecraft:campfire""}"
+"(0, 3, 4)",minecraft:campfire,"{'facing': 'east', 'lit': 'false', 'signal_fire': 'false', 'waterlogged': 'false'}","{components: {}, Items: [], CookingTimes: [I; 0, 0, 0, 0], CookingTotalTimes: [I; 0, 0, 0, 0], id: ""minecraft:campfire""}"
+"(1, 3, 4)",minecraft:campfire,"{'facing': 'east', 'lit': 'false', 'signal_fire': 'false', 'waterlogged': 'false'}","{components: {}, Items: [], CookingTimes: [I; 0, 0, 0, 0], CookingTotalTimes: [I; 0, 0, 0, 0], id: ""minecraft:campfire""}"
+"(2, 3, 4)",minecraft:campfire,"{'facing': 'east', 'lit': 'false', 'signal_fire': 'false', 'waterlogged': 'false'}","{components: {}, Items: [], CookingTimes: [I; 0, 0, 0, 0], CookingTotalTimes: [I; 0, 0, 0, 0], id: ""minecraft:campfire""}"
+"(3, 3, 4)",minecraft:campfire,"{'facing': 'east', 'lit': 'false', 'signal_fire': 'false', 'waterlogged': 'false'}","{components: {}, Items: [], CookingTimes: [I; 0, 0, 0, 0], CookingTotalTimes: [I; 0, 0, 0, 0], id: ""minecraft:campfire""}"
+"(4, 3, 4)",minecraft:campfire,"{'facing': 'east', 'lit': 'false', 'signal_fire': 'false', 'waterlogged': 'false'}","{components: {}, Items: [], CookingTimes: [I; 0, 0, 0, 0], CookingTotalTimes: [I; 0, 0, 0, 0], id: ""minecraft:campfire""}"
+"(0, 3, 5)",minecraft:campfire,"{'facing': 'east', 'lit': 'false', 'signal_fire': 'false', 'waterlogged': 'false'}","{components: {}, Items: [], CookingTimes: [I; 0, 0, 0, 0], CookingTotalTimes: [I; 0, 0, 0, 0], id: ""minecraft:campfire""}"
+"(1, 3, 5)",minecraft:campfire,"{'facing': 'east', 'lit': 'false', 'signal_fire': 'false', 'waterlogged': 'false'}","{components: {}, Items: [], CookingTimes: [I; 0, 0, 0, 0], CookingTotalTimes: [I; 0, 0, 0, 0], id: ""minecraft:campfire""}"
+"(2, 3, 5)",minecraft:campfire,"{'facing': 'east', 'lit': 'false', 'signal_fire': 'false', 'waterlogged': 'false'}","{components: {}, Items: [], CookingTimes: [I; 0, 0, 0, 0], CookingTotalTimes: [I; 0, 0, 0, 0], id: ""minecraft:campfire""}"
+"(3, 3, 5)",minecraft:campfire,"{'facing': 'east', 'lit': 'false', 'signal_fire': 'false', 'waterlogged': 'false'}","{components: {}, Items: [], CookingTimes: [I; 0, 0, 0, 0], CookingTotalTimes: [I; 0, 0, 0, 0], id: ""minecraft:campfire""}"
+"(4, 3, 5)",minecraft:campfire,"{'facing': 'east', 'lit': 'false', 'signal_fire': 'false', 'waterlogged': 'false'}","{components: {}, Items: [], CookingTimes: [I; 0, 0, 0, 0], CookingTotalTimes: [I; 0, 0, 0, 0], id: ""minecraft:campfire""}"
+"(0, 3, 6)",minecraft:campfire,"{'facing': 'east', 'lit': 'false', 'signal_fire': 'false', 'waterlogged': 'false'}","{components: {}, Items: [], CookingTimes: [I; 0, 0, 0, 0], CookingTotalTimes: [I; 0, 0, 0, 0], id: ""minecraft:campfire""}"
+"(1, 3, 6)",minecraft:campfire,"{'facing': 'east', 'lit': 'false', 'signal_fire': 'false', 'waterlogged': 'false'}","{components: {}, Items: [], CookingTimes: [I; 0, 0, 0, 0], CookingTotalTimes: [I; 0, 0, 0, 0], id: ""minecraft:campfire""}"
+"(2, 3, 6)",minecraft:campfire,"{'facing': 'east', 'lit': 'false', 'signal_fire': 'false', 'waterlogged': 'false'}","{components: {}, Items: [], CookingTimes: [I; 0, 0, 0, 0], CookingTotalTimes: [I; 0, 0, 0, 0], id: ""minecraft:campfire""}"
+"(3, 3, 6)",minecraft:campfire,"{'facing': 'east', 'lit': 'false', 'signal_fire': 'false', 'waterlogged': 'false'}","{components: {}, Items: [], CookingTimes: [I; 0, 0, 0, 0], CookingTotalTimes: [I; 0, 0, 0, 0], id: ""minecraft:campfire""}"
+"(4, 3, 6)",minecraft:campfire,"{'facing': 'east', 'lit': 'false', 'signal_fire': 'false', 'waterlogged': 'false'}","{components: {}, Items: [], CookingTimes: [I; 0, 0, 0, 0], CookingTotalTimes: [I; 0, 0, 0, 0], id: ""minecraft:campfire""}"

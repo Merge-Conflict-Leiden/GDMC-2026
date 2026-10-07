@@ -1,0 +1,10 @@
+Position,BlockID,States,Data
+"(0, 0, 0)",minecraft:oak_trapdoor,"{'facing': 'west', 'half': 'bottom', 'open': 'true', 'powered': 'false', 'waterlogged': 'false'}",
+"(1, 0, 0)",minecraft:spruce_trapdoor,"{'facing': 'north', 'half': 'top', 'open': 'false', 'powered': 'false', 'waterlogged': 'false'}",
+"(2, 0, 0)",minecraft:oak_trapdoor,"{'facing': 'east', 'half': 'bottom', 'open': 'true', 'powered': 'false', 'waterlogged': 'false'}",
+"(1, 0, 1)",minecraft:spruce_trapdoor,"{'facing': 'north', 'half': 'top', 'open': 'false', 'powered': 'false', 'waterlogged': 'false'}",
+"(0, 0, 2)",minecraft:oak_trapdoor,"{'facing': 'west', 'half': 'bottom', 'open': 'true', 'powered': 'false', 'waterlogged': 'false'}",
+"(1, 0, 2)",minecraft:spruce_trapdoor,"{'facing': 'south', 'half': 'top', 'open': 'false', 'powered': 'false', 'waterlogged': 'false'}",
+"(2, 0, 2)",minecraft:oak_trapdoor,"{'facing': 'east', 'half': 'bottom', 'open': 'true', 'powered': 'false', 'waterlogged': 'false'}",
+"(1, 1, 0)",minecraft:campfire,"{'facing': 'north', 'lit': 'false', 'signal_fire': 'false', 'waterlogged': 'false'}","{components: {}, Items: [], CookingTimes: [I; 0, 0, 0, 0], CookingTotalTimes: [I; 0, 0, 0, 0], id: ""minecraft:campfire""}"
+"(1, 1, 1)",minecraft:lantern,"{'hanging': 'false', 'waterlogged': 'false'}",
