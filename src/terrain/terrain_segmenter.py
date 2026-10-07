@@ -36,6 +36,8 @@ import numpy as np
 from gdpc.editor import interface
 from gdpc.vector_tools import ivec3
 
+from utils import announce
+
 from .classifier import classify_districts, detect_special_zones
 from .feature_extractor import ICE_BLOCK_NAMES, TREE_BLOCK_NAMES, extract_features
 from .terrain_types import TerrainMap
@@ -113,6 +115,8 @@ class TerrainSegmenter:
         """
         t0 = time.perf_counter()
 
+        announce("We zijn wat zaken aan het voorberekenen voordat we van start gaan...")
+
         if self._heightmap is None:
             logger.info("Phase 1: fetching world data from Minecraft...")
             self._fetch_world_data()
@@ -176,6 +180,7 @@ class TerrainSegmenter:
         logger.info("  → Windmill sites: %s", terrain_map.windmill_sites)
 
         if build_roads:
+            announce("We gaan uitzoeken waar we de wegen het beste kunnen leggen...")
             logger.info("Phase 6: generating road network...")
             from .road_network import generate_roads as _gen_roads
 
@@ -189,6 +194,7 @@ class TerrainSegmenter:
             )
 
         if build_wall:
+            announce("We bepalen waar de stadsmuur het beste kan komen te liggen...")
             logger.info("Phase 7: generating wall layout...")
             from .wall_layout import generate_wall_layout as _gen_wall
 
